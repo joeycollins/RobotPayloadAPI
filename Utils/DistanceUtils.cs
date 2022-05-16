@@ -16,7 +16,7 @@ namespace RobotAPI.Utils
 
             foreach (Robot robot in robots)
             {
-                double d = Distance(payload.x, payload.y, robot.X, robot.Y);
+                double d = Distance(payload.X, payload.Y, robot.X, robot.Y);
                 if (d <= 10)
                 {
                     if (result == null || result.BatteryLevel < robot.BatteryLevel)
@@ -25,7 +25,7 @@ namespace RobotAPI.Utils
                         distance = d;
                     }
                 }
-                else if (Distance(payload.x, payload.y, robot.X, robot.Y) < distance){
+                else if (Distance(payload.X, payload.Y, robot.X, robot.Y) < distance){
                     result = robot;
                     distance = d;
                 }
@@ -33,9 +33,9 @@ namespace RobotAPI.Utils
 
             return new PayloadAssigment()
             {
-                robotID = result.RobotID,
-                distanceToGoal = (float)distance,
-                batteryLevel = result.BatteryLevel
+                RobotID = result.RobotID,
+                DistanceToGoal = (float)distance,
+                BatteryLevel = result.BatteryLevel
             };
         }
     }
