@@ -1,12 +1,13 @@
 ﻿using Newtonsoft.Json;
+using RobotAPI.Models;
 using System.Net.Http.Headers;
 using System.Text.Json;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
-namespace RobotAPI
+namespace RobotAPI.Clients
 {
-    public class SVTRobotsClient : ISVTRobotsClient 
+    public class SVTRobotsClient : ISVTRobotsClient
     {
         HttpClient client { get; }
         const string basePath = "https://60c8ed887dafc90017ffbd56.mockapi.io/";

@@ -1,4 +1,6 @@
-﻿namespace RobotAPI.Utils
+﻿using RobotAPI.Models;
+
+namespace RobotAPI.Utils
 {
     public class DistanceUtils
     {

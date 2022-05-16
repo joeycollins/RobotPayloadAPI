@@ -1,4 +1,4 @@
-using RobotAPI;
+using RobotAPI.Clients;
 
 var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.

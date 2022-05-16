@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using RobotAPI.Clients;
+using RobotAPI.Models;
 using RobotAPI.Utils;
 
 namespace RobotAPI.Controllers

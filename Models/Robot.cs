@@ -1,11 +1,11 @@
 ﻿using Newtonsoft.Json;
 
-namespace RobotAPI
+namespace RobotAPI.Models
 {
     public class Robot
     {
         [JsonProperty("robotID")]
-        public int RobotID {get; set;}
+        public int RobotID { get; set; }
         [JsonProperty("batteryLevel")]
         public int BatteryLevel { get; set; }
         [JsonProperty("x")]
