@@ -1,4 +1,4 @@
-﻿namespace RobotAPI
+﻿namespace RobotAPI.Models
 {
     public class PayloadAssigment
     {
