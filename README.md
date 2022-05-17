@@ -11,7 +11,7 @@ Instructions: \
 }  \
 \
 Make sure "raw" is checked and JSON is selected. \
-2 (alternative): Go to to https://localhost:5000/swagger. This should give a good overview of the API. Expand the Post request type listed (/api/robots/closest). Click "Try it out" and run a post request with a payload.\
+2 (alternative): Go to to https://localhost:5000/swagger. This should give a good overview of the API. Expand the Post request type listed (/api/robots/closest). Click "Try it out" and run a post request with a payload. Look at "Server response" section for the returned value. \
 \
 Next Steps:\
 Ideally we would save all the Payloads into a database and when sending a post request we could supply the loadID only, retrieve the payload coords from the database, and return the closest robot.\
