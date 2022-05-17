@@ -60,7 +60,7 @@ namespace RobotAPI.Controllers
 
             return result == null ? null : new PayloadAssigment()
                 {
-                    RobotID = result.RobotID,
+                    RobotId = result.RobotId,
                     DistanceToGoal = (float)resultDistance,
                     BatteryLevel = result.BatteryLevel
                 };

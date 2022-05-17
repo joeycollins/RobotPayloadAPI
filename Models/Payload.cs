@@ -4,8 +4,8 @@ namespace RobotAPI.Models
 {
     public class Payload
     {
-        [JsonProperty("loadID")]
-        public int LoadID { get; set; }
+        [JsonProperty("loadId")]
+        public int LoadId { get; set; }
         [JsonProperty("x")]
         public int X { get; set; }
         [JsonProperty("y")]

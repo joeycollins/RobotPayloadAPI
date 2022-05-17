@@ -4,8 +4,8 @@ namespace RobotAPI.Models
 {
     public class PayloadAssigment
     {
-        [JsonProperty("robotID")]
-        public int RobotID { get; set; }
+        [JsonProperty("robotId")]
+        public int RobotId { get; set; }
         
         [JsonProperty("distanceToGoal")]
         public float DistanceToGoal { get; set; }
