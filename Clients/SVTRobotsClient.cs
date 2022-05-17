@@ -25,7 +25,7 @@ namespace RobotAPI.Clients
 
         public async Task<IEnumerable<Robot>> GetRobotData()
         {
-            IEnumerable<Robot> result = null;
+            IEnumerable<Robot> result = Enumerable.Empty<Robot>();
             HttpResponseMessage response = await client.GetAsync(apiPath);
             if (response.IsSuccessStatusCode)
             {
