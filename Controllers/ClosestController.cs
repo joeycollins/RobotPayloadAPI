@@ -35,10 +35,20 @@ namespace RobotAPI.Controllers
                 double distance = DistanceUtils.Distance(payload.X, payload.Y, robot.X, robot.Y);
                 if (distance <= 10)
                 {
-                    if (result == null || result.BatteryLevel < robot.BatteryLevel)
+                    if (result == null || resultDistance > 10)
                     {
                         result = robot;
                         resultDistance = distance;
+                    }else if (result.BatteryLevel < robot.BatteryLevel)
+                    {
+                        result = robot;
+                        resultDistance = distance;
+                    }
+                    //rare edge case where if two robots are within 10 distance, and have same battery life, take closer robot
+                    else if (result.BatteryLevel == robot.BatteryLevel && distance < resultDistance)
+                    {
+                        result = robot;
+                        resultDistance = distance;   
                     }
                 }
                 else if (distance < resultDistance)
