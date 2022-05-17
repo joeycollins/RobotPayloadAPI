@@ -1,7 +1,7 @@
 # RobotPayloadAPI
 
 Instructions: \
-1: Open RobotAPI.sln in visual studio. Build project and run. \
+1: Open RobotAPI.sln in visual studio. Build project and run. Make sure ASP.NET web development is installed. \
 2: Submit a post request on Postman, make sure Verify SSL certificates is turned off in postman settings. Under "body" enter the argument to supply for the post request. Ex. \
 \
 {\
